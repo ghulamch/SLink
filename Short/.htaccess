@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Match any URL of the form /shortlink
+RewriteRule ^([a-zA-Z0-9]+)$ index.php?short_link=$1 [L,QSA]
